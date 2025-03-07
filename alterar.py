@@ -17,7 +17,7 @@ def alterar():
          print("Favor informe um número de registro válido")
       
       pessoa_a_alterar = banco_de_dados[qual_pessoa] # pegamos os dados da pessoa, vamos mostrar para o usuário
-      for numero, (campo, valor) in enumerate(pessoa_a_alterar.items())    # .items() retorna uma lista de campos e seus respectivos valores
+      for numero, (campo, valor) in enumerate(pessoa_a_alterar.items()) :   # .items() retorna uma lista de campos e seus respectivos valores
          print( f"{numero+1}:{campo} = {valor}")
       qual_campo = int("Informe o número do campo que quer alterar")
       # aqui novamente caberia uma validação. Aí você se pergunta, melhor fazer uma função que faz isso! 
