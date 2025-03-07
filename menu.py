@@ -14,7 +14,7 @@ def menu():
         print('4 -- listar todas ou uma parte das pessoas')
         print('5 -- sair do menu de pessoas')
         print('POR FAVOR ESCOLHA UMA OPÇÃO ENTRE 1 E 5')
-        
+        # excelente uso do try !!!
         try:
             opcao = int(input('Faça sua escolha aqui: '))
             
@@ -27,12 +27,16 @@ def menu():
             elif opcao == 4:
                 listar.listar()
             elif opcao == 5:
-                print('Programa encerrado. Obrigado por usar o software de Bryan.')
                 break
             else:
                 print('Opção inválida! Tente novamente.')
         except ValueError:
             print('Erro! Digite um número entre 1 e 5.')
+    #
+    # aqui estamos fora do loop. Sempre é bom colocar alguma coisa DEPOIS do fim do while. 
+    # Se não tiver nada para colocar, as vezes é bom colocar um pass
+    # 
+    print('Programa encerrado. Obrigado por usar o software de Bryan.')
 
 if __name__ == "__main__":
     menu()
