@@ -1,10 +1,15 @@
+from carregar import carregar
+from salvar import salvar
 def excluir():
-    print(' PARA REMOVER UMA PESSOA ESPECIFICA, PRIMEIRO VEJA A LISTAGEM DE TODOS PARA SABER A NUMERAÇAO')
-    escolha = int(input(' Qual pessoa voce quer remover?'))
-    for p,c in enumerate(banco_de_dados):
-        if p == escolha:
-            del banco_de_dados[p]
-            print(f' dados de pessoa {banco_de_dados[p]} sendo excluida...')
+    dado = carregar()
+    print(' PARA REMOVER UMA PESSOA ESPECIFICA, PRIMEIRO VEJA A LISTAGEM DE TODOS PARA SABER O ID')
+    escolha = int(input(' Qual pessoa voce quer remover?[id]:'))
+    for i, c  in enumerate(dado):
+        if c["id"] == escolha:
+            del dado[i]
+            print(f' dados de pessoa sendo excluida...')
+            salvar(dado)
+            break
     print(' concluido.')
 
 if __name__ == "__main__":
