@@ -15,7 +15,7 @@ def listar():
             print(f' estado civil {pessoa['estado_civil']}')
             print('-' * 30)
     if quer == 2:
-        escolha = (' qual o id da pessoa que voce quer ver? ')
+        escolha = int(input(' qual o id da pessoa que voce quer ver? '))
         for pessoa in dado:
             if pessoa["id"] == escolha:
                 print(f' Nome: {pessoa['nome']}')

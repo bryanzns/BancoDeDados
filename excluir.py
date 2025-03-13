@@ -4,9 +4,9 @@ def excluir():
     dado = carregar()
     print(' PARA REMOVER UMA PESSOA ESPECIFICA, PRIMEIRO VEJA A LISTAGEM DE TODOS PARA SABER O ID')
     escolha = int(input(' Qual pessoa voce quer remover?[id]:'))
-    for i, c  in enumerate(dado):
-        if c["id"] == escolha:
-            del dado[i]
+    for  c,i in enumerate(dado):
+         if i["id"] == escolha:
+            del dado[c]
             print(f' dados de pessoa sendo excluida...')
             salvar(dado)
             break

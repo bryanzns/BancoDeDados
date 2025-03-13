@@ -1,7 +1,7 @@
-import incluir
-import alterar
-import excluir
-import listar
+from incluir import incluir
+from alterar import alterar
+from excluir import excluir
+from listar import listar
 
 # Menu de opções
 def menu():
@@ -19,13 +19,13 @@ def menu():
             opcao = int(input('Faça sua escolha aqui: '))
             
             if opcao == 1:
-                incluir.incluir()
+                incluir()
             elif opcao == 2:
-                alterar.alterar()
+                alterar()
             elif opcao == 3:
-                excluir.excluir()
+                excluir()
             elif opcao == 4:
-                listar.listar()
+                listar()
             elif opcao == 5:
                 print('Programa encerrado. Obrigado por usar o software de Bryan.')
                 break

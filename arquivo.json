@@ -1,7 +1,16 @@
-{
-    "id": 1,
-    "nome": "bryan",
-    "cpf": 56784932,
-    "data_de_nasc": "04/06/2000",
-    "estado_civil": "solteiro"
-}
+[
+    {
+        "id": 7,
+        "nome": "joao",
+        "cpf": 67548,
+        "data_de_nasc": "09q03/30",
+        "estado_civil": "solteiro"
+    },
+    {
+        "id": 3,
+        "nome": "boko",
+        "cpf": 657489320,
+        "data_de_nasc": "08/07/2000",
+        "estado_civil": "casado"
+    }
+]
